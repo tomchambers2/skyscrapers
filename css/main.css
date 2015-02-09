@@ -4,11 +4,17 @@ html {
     color: #222;
     font-size: 1em;
     line-height: 1.4;
+    height: 100%;
 }
 
 body {
+    height: 100%;
+}
+
+.main {
     background: url('../img/background.png');
     background-size: 100%;
+    height: calc(100% - 164px);
 }
 
 .player {
@@ -27,12 +33,14 @@ h1 {
 h2 {
     margin: 0;    
     color: #fff;
-    width: 100%;
+    //width: 100%;
     text-align: right;
     font-size: 40px;  
     position: absolute;
-    bottom: 200px;
-    padding-right: 10px;    
+    bottom: 210px;  
+    right: 20px; 
+    background: rgba(0,0,0,0.2);
+    padding: 3px;
 }
 h2 a {
     color: #fff;
@@ -40,13 +48,15 @@ h2 a {
 h3 {
     margin: 0;
     color: #fff;
-    width: 100%;
+    //width: 100%;
+    padding: 3px;
+    background: rgba(0,0,0,0.2);
     text-align: right;
     font-size: 20px;  
     position: absolute;
     bottom: 174px;    
-    padding-right: 40px;
     display: block;
+    right: 20px;
 }
 
 ::-moz-selection {
